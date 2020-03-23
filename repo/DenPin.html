@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc Hanh Den Pin</title>
+    <script src="FlashLamp.js"></script>
+    <script src="Baterry.js"></script>
+</head>
+<body>
+<script>
+    let baterry = new Baterry(10);
+    let flashlam=new FlashLam(baterry);
+    document.write(flashlam.getBeterry());
+    flashlam.light();
+    flashlam.turnOn();
+    flashlam.light();
+    baterry.decreaseEnergy();
+    document.write(flashlam.getBeterry());
+</script>
+</body>
+</html>
